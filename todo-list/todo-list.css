@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+}
+
+.div-top {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+  width: 50%;
+}
+.todo-grid,
+.todo-input-grid {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+}
+.todo-input-grid {
+  margin-bottom: 10px;
+  align-items: stretch;
+}
+
+.name-input,
+.date-input {
+  font-size: 15px;
+  padding: 6px;
+}
+
+.add-btn {
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+.delete-btn {
+  background-color: rgb(151, 11, 11);
+  color: white;
+  border: none;
+  font-size: 15px;
+  padding: 10px 0;
+  cursor: pointer;
+  display: inline-block;
+  transition: all ease-in-out 3ms;
+  border-radius: 0.2rem;
+}
+
+.remove-btn {
+  justify-self: end;
+  width: 120px;
+}
+
+.delete-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-5%);
+}
+.delete-btn:active {
+  transform: translateY(0%);
+}
